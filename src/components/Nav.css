@@ -4,12 +4,11 @@
     padding-right: 5px;
     text-align: center;
     list-style: none;
+    user-select: none;
 }
 
 .navItem {
     display: inline;
-    padding-left: 1em;
-    padding-right: 1em;
     font-size: 1.3em;
     margin: auto;
 }

@@ -7,7 +7,14 @@ class Nav extends Component {
         const { items } = this.props;
         return (
             <ul id="navList">
-                {items.map((item, i) => <li className="navItem" key={i}><Link to={item === 'home' ? '/' : item}>{item}</Link></li>)}
+                {items.map((item, i) => 
+                <li className="navItem" key={i}>
+                    <Link to={item === 'home' ? '/' : item}>
+                        {item}
+                    </Link>
+                    {i === items.length - 1 ? '' : '  |  '}
+                </li>
+                )}
             </ul>
         )
     }

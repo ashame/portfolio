@@ -5,7 +5,7 @@ class Home extends Component {
     render() {
         return (
             <Container>
-                <span>
+                <span class="title">
                     under construction
                 </span>
                 <p>

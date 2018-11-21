@@ -5,7 +5,7 @@ class Experience extends Component {
     render() {
         return (
             <Container>
-                <span>
+                <span class="title">
                     experience
                 </span>
                 <p>
