@@ -1,17 +1,17 @@
 import React, { Component }  from 'react';
-import './Home.css';
+import { Container } from 'semantic-ui-react';
 
 class Home extends Component { 
     render() {
         return (
-            <div id="homepage">
-                <h2>
+            <Container>
+                <span>
                     under construction
-                </h2>
+                </span>
                 <p>
-                    placeholder home page
+                    placeholder homepage
                 </p>
-            </div>
+            </Container>
         )
     }
 }

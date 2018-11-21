@@ -25,6 +25,7 @@ class App extends Component {
             <Link to="/">
               <img src={logo} className="App-logo" alt="logo" />
             </Link>
+            <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.css"></link>
           </header>
           <Nav items={navItems} />
           <div className="content">

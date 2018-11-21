@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
+import { Container } from 'semantic-ui-react';
 
 class Experience extends Component {
     render() {
         return (
-            <div id="expPage">
-                <h2>
+            <Container>
+                <span>
                     experience
-                </h2>
+                </span>
                 <p>
-                    placeholder experience page
+                    placeholder experience page 
                 </p>
-            </div>
+            </Container>
         )
     }
 }

@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
+import { Container } from 'semantic-ui-react';
 
 class Projects extends Component {
     render() {
         return (
-            <div id="projectPage">
-                <h2>
+            <Container>
+                <span>
                     projects
-                </h2>
+                </span>
                 <p>
                     placeholder project page
                 </p>
-            </div>
+            </Container>
         )
     }
 }

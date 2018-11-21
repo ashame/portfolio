@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
+import { Container } from 'semantic-ui-react';
 
 class Contact extends Component {
     render() {
         return (
-            <div id="contactDiv">
-                <h2>
+            <Container>
+                <span>
                     contact me (us??)
-                </h2>
+                </span>
                 <p>
-                    placeholder contact page.
+                    placeholder contact page 
                 </p>
-            </div>
+            </Container>
         )
     }
 }

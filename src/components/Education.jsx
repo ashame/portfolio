@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
+import { Container } from 'semantic-ui-react';
 
 class Education extends Component {
     render() {
         return (
-            <div id="eduPage">
-            <h2>
-                education
-            </h2>
-            <p>
-                placeholder education page
-            </p>
-            </div>
+            <Container>
+                <span class="title">
+                    education
+                </span>
+                <p>
+                    placeholder education page
+                </p>
+            </Container>
         )
     }
 }
