@@ -1,0 +1,25 @@
+#navList { 
+    padding-left: 0.5em;
+    margin: 5%;
+    text-align: center;
+    list-style: none;
+}
+
+.navItem {
+    display: inline;
+    font-size: .65em;
+    margin: auto;
+}
+
+.navItem a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navItem a:hover {
+    color: rgba(128, 128, 128, .9);
+}
+
+.navItem::after {
+    content: "\00a0\00a0";
+}
