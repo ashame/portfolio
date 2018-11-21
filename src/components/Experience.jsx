@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 
-class Contact extends Component {
+class Experience extends Component {
     render() {
         return (
-            <div id="contactDiv">
+            <div id="expPage">
                 <h2>
-                    contact me (us??)
+                    experience
                 </h2>
                 <p>
-                    placeholder contact page.
+                    placeholder experience page
                 </p>
             </div>
         )
     }
 }
 
-export default Contact;
+export default Experience;

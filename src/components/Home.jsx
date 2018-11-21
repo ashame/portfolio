@@ -5,9 +5,12 @@ class Home extends Component {
     render() {
         return (
             <div id="homepage">
-                <h3>
+                <h2>
                     under construction
-                </h3>
+                </h2>
+                <p>
+                    placeholder home page
+                </p>
             </div>
         )
     }
