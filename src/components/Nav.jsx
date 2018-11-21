@@ -4,14 +4,10 @@ import './Nav.css'
 
 class Nav extends Component {
     render() {
+        const { items } = this.props;
         return (
             <ul id="navList">
-                <li className="navItem">
-                    <Link to="">home</Link>
-                </li>
-                <li className="navItem">
-                    <Link to="">test</Link>
-                </li>
+                {items.map((item, i) => <li className="navItem" key={i}><Link to={item == 'home' ? '/' : item}>{item}</Link></li>)}
             </ul>
         )
     }

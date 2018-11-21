@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import logo from './logo.svg';
-import Home from './components/Home';
-import Nav from './components/Nav';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Switch } from 'react-router';
+
 import './App.css';
+import logo from './logo.svg';
+import Nav from './components/Nav';
+import navItems from './components/NavItems';
+import Footer from './components/Footer';
+import MissingPage from './components/MissingPage';
+
+import Home from './components/Home';
+import Contact from './components/Contact';
 
 class App extends Component {
   render() {
@@ -12,14 +18,21 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />            
-            <Nav />
-          </header>          
+            <Link to="/">
+              <img src={logo} className="App-logo" alt="logo" />
+            </Link>
+          </header>
+          <Nav items={navItems} />
           <div className="content">
-            <Route name="home" exact path="/" component={Home} />
+            <Switch>
+              <Route name="home" exact path="/" component={Home} />
+              <Route name="home" exact path="/home" component={Home} />
+              <Route name="contact" exact path="/contact" component={Contact} />
+              <Route component={MissingPage} />
+            </Switch>
           </div>
-          <Footer />  
-        </div>       
+          <Footer />
+        </div>
       </Router>
     );
   }

@@ -5,9 +5,9 @@ class Home extends Component {
     render() {
         return (
             <div id="homepage">
-                <code>
+                <h3>
                     under construction
-                </code>
+                </h3>
             </div>
         )
     }
