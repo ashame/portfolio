@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import MissingPage from './components/MissingPage';
 
 import Home from './components/Home';
+import Articles from './components/Articles';
 import About from './components/About';
 import Education from './components/Education';
 import Experience from './components/Experience';
@@ -28,9 +29,9 @@ class App extends Component {
             <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.css"></link>
           </header>
           <Nav items={navItems} />
-          <div className="content">
+          <div id="content-wrapper">
             <Switch>
-              <Route name="home" exact path="/" component={Home} />
+              <Route name="home" exact path="/" render={(props) => <Home articles={Articles} {...props} />} />
               <Route name="about" exact path="/about" component={About} />
               <Route name="education" exact path="/education" component={Education} />
               <Route name="experience" exact path="/experience" component={Experience} />

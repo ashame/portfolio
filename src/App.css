@@ -30,13 +30,17 @@
   user-select: none;
 }
 
-.content {
+#content-wrapper {
   flex: 1 0 auto;  
   margin-top: 5vh;
 }
 
 .container { 
   font-family: source-code-pro, monospace;
+}
+
+.ui.divider { 
+  margin: 5%!important; 
 }
 
 .container .title {

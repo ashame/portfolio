@@ -9,7 +9,7 @@ class Experience extends Component {
                     experience
                 </span>
                 <p>
-                    placeholder experience page 
+                    Pellentesque eget dui a ex ornare egestas et sed quam. Ut eleifend id nulla non aliquam. Etiam in sapien id nisl faucibus condimentum in ut nulla. Suspendisse venenatis nisi in pharetra tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis id sem leo. Etiam et vehicula dolor. Mauris convallis tempor est et interdum.
                 </p>
             </Container>
         )
