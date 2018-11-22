@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { Container, Divider } from 'semantic-ui-react';
 
-class Experience extends Component {
-    
+class TextPage extends Component { 
     renderArticles() {
         const { articles } = this.props;
         return (
             <Container>
-                {articles.experience.map((article, i) =>
+                {articles.map((article, i) => 
                     <Container>
                         <span class="title">
                             {article.title}
@@ -15,13 +14,12 @@ class Experience extends Component {
                         <p>
                             {article.content}
                         </p>
-                        {i === articles.experience.length - 1 ? '' : <Divider />}
+                        {i === articles.length - 1 ? '' : <Divider />}
                     </Container>
                 )}
             </Container>
         )
     }
-
     render() {
         return (
             <Container>
@@ -31,4 +29,4 @@ class Experience extends Component {
     }
 }
 
-export default Experience;
+export default TextPage;

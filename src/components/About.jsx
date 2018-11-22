@@ -6,7 +6,7 @@ class About extends Component {
         const { articles } = this.props;
         return (
             <Container>
-                {articles.about.map((article, i) =>
+                {articles.map((article, i) =>
                     <Container>
                         <span class="title">
                             {article.title}
@@ -14,7 +14,7 @@ class About extends Component {
                         <p>
                             {article.content}
                         </p>
-                        {i === articles.about.length - 1 ? '' : <Divider />}
+                        {i === articles.length - 1 ? '' : <Divider />}
                     </Container>
                 )}
             </Container>

@@ -9,13 +9,8 @@ import navItems from './components/NavItems';
 import Footer from './components/Footer';
 import MissingPage from './components/MissingPage';
 
-import Home from './components/Home';
 import Articles from './components/Articles';
-import About from './components/About';
-import Education from './components/Education';
-import Experience from './components/Experience';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import TextPage from './components/TextPage';
 
 class App extends Component {
   render() {
@@ -31,12 +26,12 @@ class App extends Component {
           <Nav items={navItems} />
           <div id="content-wrapper">
             <Switch>
-              <Route name="home" exact path="/" render={(props) => <Home articles={Articles} {...props} />} />
-              <Route name="about" exact path="/about" render={(props) => <About articles={Articles} {...props} />} />
-              <Route name="education" exact path="/education" render={(props) => <Education articles={Articles} {...props} />} />
-              <Route name="experience" exact path="/experience" render={(props) => <Experience articles={Articles} {...props} />} />
-              <Route name="projects" exact path="/projects" render={(props) => <Projects articles={Articles} {...props} />} />
-              <Route name="contact" exact path="/contact" render={(props) => <Contact articles={Articles} {...props} />} />
+              <Route name="home" exact path="/" render={(props) => <TextPage articles={Articles.home} {...props} />} />
+              <Route name="about" exact path="/about" render={(props) => <TextPage articles={Articles.about} {...props} />} />
+              <Route name="education" exact path="/education" render={(props) => <TextPage articles={Articles.education} {...props} />} />
+              <Route name="experience" exact path="/experience" render={(props) => <TextPage articles={Articles.experience} {...props} />} />
+              <Route name="projects" exact path="/projects" render={(props) => <TextPage articles={Articles.projects} {...props} />} />
+              <Route name="contact" exact path="/contact" render={(props) => <TextPage articles={Articles.contact} {...props} />} />
               <Route component={MissingPage} />
             </Switch>
           </div>
