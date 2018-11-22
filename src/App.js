@@ -32,11 +32,11 @@ class App extends Component {
           <div id="content-wrapper">
             <Switch>
               <Route name="home" exact path="/" render={(props) => <Home articles={Articles} {...props} />} />
-              <Route name="about" exact path="/about" component={About} />
-              <Route name="education" exact path="/education" component={Education} />
-              <Route name="experience" exact path="/experience" component={Experience} />
-              <Route name="projects" exact path="/projects" component={Projects} />
-              <Route name="contact" exact path="/contact" component={Contact} />
+              <Route name="about" exact path="/about" render={(props) => <About articles={Articles} {...props} />} />
+              <Route name="education" exact path="/education" render={(props) => <Education articles={Articles} {...props} />} />
+              <Route name="experience" exact path="/experience" render={(props) => <Experience articles={Articles} {...props} />} />
+              <Route name="projects" exact path="/projects" render={(props) => <Projects articles={Articles} {...props} />} />
+              <Route name="contact" exact path="/contact" render={(props) => <Contact articles={Articles} {...props} />} />
               <Route component={MissingPage} />
             </Switch>
           </div>

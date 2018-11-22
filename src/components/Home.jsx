@@ -8,7 +8,7 @@ class Home extends Component {
         const { articles } = this.props;
         return (
             <Container>
-                {articles.data.map((article, i) =>
+                {articles.home.map((article, i) =>
                     <Container>
                         <span class="title">
                             {article.title}
@@ -16,7 +16,7 @@ class Home extends Component {
                         <p>
                             {article.content}
                         </p>
-                        {i === articles.data.length - 1 ? '' : <Divider />}
+                        {i === articles.home.length - 1 ? '' : <Divider />}
                     </Container>
                 )}
             </Container>

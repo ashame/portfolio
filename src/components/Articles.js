@@ -1,5 +1,21 @@
 const Articles = {
-    "data" : [
+    "default" : [
+        {
+            "id": 0,
+            "title": "Lorem ipsum",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit felis libero, ut sagittis metus luctus non. Nunc maximus tempus est, non facilisis neque pulvinar sit amet. Ut eget diam sit amet quam accumsan pharetra eget a augue. Donec facilisis magna ut condimentum auctor. Nunc aliquet ante elit, dignissim convallis urna porta dignissim. Quisque eu gravida nulla. Aenean efficitur sagittis erat in lobortis. Donec volutpat elit eu eros ultrices, sit amet tristique est pulvinar. Aenean vestibulum odio et finibus porttitor. Pellentesque bibendum, justo ac vehicula malesuada, elit urna bibendum sapien, quis venenatis elit lectus sit amet mauris. Nunc pretium arcu sed semper convallis.",
+            "tags": ""
+        }
+    ],
+    "about": [
+        {
+            "id": 0,
+            "title": "about",
+            "content": "placeholder text tbh.",
+            "tags": ""
+        }
+    ],
+    "home" : [
         {
             "id": 0,
             "title": "under construction",
@@ -18,7 +34,7 @@ const Articles = {
             "content": "A bunch of text is supposed to go here. I'm not too sure what exactly, but at least something goes here. Most likely it'll just be a rambling of nonsense, but there may be some jewels and nuggets of useful information - just kididng. Congratulations! You've wasted a whole 30 - 40 seconds of your life reading this. Why are you still reading? stop.",
             "tags": ""
         }, 
-    ]
+    ],
 };
 
 export default Articles;

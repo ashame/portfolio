@@ -13,6 +13,7 @@
 
 .App a {
   color: inherit;
+  outline: none;
 }
 
 .App-logo {
