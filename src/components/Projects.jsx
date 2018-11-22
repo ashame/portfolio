@@ -7,15 +7,15 @@ class Projects extends Component {
         const { articles } = this.props;
         return (
             <Container>
-                {articles.default.map((article, i) =>
+                {articles.projects.map((article, i) =>
                     <Container>
                         <span class="title">
-                            projects
+                            {article.title}
                         </span>
                         <p>
                             {article.content}
                         </p>
-                        {i === articles.default.length - 1 ? '' : <Divider />}
+                        {i === articles.projects.length - 1 ? '' : <Divider />}
                     </Container>
                 )}
             </Container>

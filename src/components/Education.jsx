@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 import { Container, Divider } from 'semantic-ui-react';
 
 class Education extends Component {
-    
+
     renderArticles() {
         const { articles } = this.props;
         return (
             <Container>
-                {articles.default.map((article, i) =>
+                {articles.education.map((article, i) =>
                     <Container>
                         <span class="title">
-                            education
+                            {article.title}
                         </span>
                         <p>
                             {article.content}
                         </p>
-                        {i === articles.default.length - 1 ? '' : <Divider />}
+                        {i === articles.education.length - 1 ? '' : <Divider />}
                     </Container>
                 )}
             </Container>
@@ -25,7 +25,7 @@ class Education extends Component {
     render() {
         return (
             <Container>
-                { this.renderArticles() }
+                {this.renderArticles()}
             </Container>
         )
     }

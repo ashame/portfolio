@@ -7,15 +7,15 @@ class Experience extends Component {
         const { articles } = this.props;
         return (
             <Container>
-                {articles.default.map((article, i) =>
+                {articles.experience.map((article, i) =>
                     <Container>
                         <span class="title">
-                            experience
+                            {article.title}
                         </span>
                         <p>
                             {article.content}
                         </p>
-                        {i === articles.default.length - 1 ? '' : <Divider />}
+                        {i === articles.experience.length - 1 ? '' : <Divider />}
                     </Container>
                 )}
             </Container>

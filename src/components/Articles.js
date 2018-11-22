@@ -7,14 +7,6 @@ const Articles = {
             "tags": ""
         }
     ],
-    "about": [
-        {
-            "id": 0,
-            "title": "about",
-            "content": "placeholder text tbh.",
-            "tags": ""
-        }
-    ],
     "home" : [
         {
             "id": 0,
@@ -35,6 +27,46 @@ const Articles = {
             "tags": ""
         }, 
     ],
+    "about": [
+        {
+            "id": 0,
+            "title": "about",
+            "content": "placeholder text tbh.",
+            "tags": ""
+        }
+    ],
+    "education": [
+        {
+            "id": 0,
+            "title": "education",
+            "content": "placeholder text tbh.",
+            "tags": ""
+        }
+    ],
+    "experience": [
+        {
+            "id": 0,
+            "title": "experience",
+            "content": "placeholder text tbh.",
+            "tags": ""
+        }
+    ],
+    "projects": [
+        {
+            "id": 0,
+            "title": "projects",
+            "content": "placeholder text tbh.",
+            "tags": ""
+        }
+    ],
+    "contact": [
+        {
+            "id": 0,
+            "title": "contact",
+            "content": "placeholder text tbh.",
+            "tags": ""
+        }
+    ]
 };
 
 export default Articles;

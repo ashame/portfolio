@@ -7,15 +7,15 @@ class Contact extends Component {
         const { articles } = this.props;
         return (
             <Container>
-                {articles.default.map((article, i) =>
+                {articles.contact.map((article, i) =>
                     <Container>
                         <span class="title">
-                            contact me (us???)
+                            {article.title}
                         </span>
                         <p>
                             {article.content}
                         </p>
-                        {i === articles.default.length - 1 ? '' : <Divider />}
+                        {i === articles.contact.length - 1 ? '' : <Divider />}
                     </Container>
                 )}
             </Container>
