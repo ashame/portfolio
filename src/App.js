@@ -13,9 +13,10 @@ import Articles from './components/Articles';
 import TextPage from './components/TextPage';
 
 class App extends Component {
+  
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
           <header className="App-header">
             <Link to="/">
@@ -26,12 +27,12 @@ class App extends Component {
           <Nav items={navItems} />
           <div id="content-wrapper">
             <Switch>
-              <Route name="home" path="" render={(props) => <TextPage articles={Articles.home} {...props} />} />
-              <Route name="about" path="about" render={(props) => <TextPage articles={Articles.about} {...props} />} />
-              <Route name="education" path="education" render={(props) => <TextPage articles={Articles.education} {...props} />} />
-              <Route name="experience" path="experience" render={(props) => <TextPage articles={Articles.experience} {...props} />} />
-              <Route name="projects" path="projects" render={(props) => <TextPage articles={Articles.projects} {...props} />} />
-              <Route name="contact" path="contact" render={(props) => <TextPage articles={Articles.contact} {...props} />} />
+              <Route name="home" exact path="/" render={(props) => <TextPage articles={Articles.home} {...props} />} />
+              <Route name="about" path='/about' render={(props) => <TextPage articles={Articles.about} {...props} />} />
+              <Route name="education" path='/education' render={(props) => <TextPage articles={Articles.education} {...props} />} />
+              <Route name="experience" path='/experience' render={(props) => <TextPage articles={Articles.experience} {...props} />} />
+              <Route name="projects" path='/projects' render={(props) => <TextPage articles={Articles.projects} {...props} />} />
+              <Route name="contact" path='/contact' render={(props) => <TextPage articles={Articles.contact} {...props} />} />
               <Route component={MissingPage} />
             </Switch>
           </div>
@@ -43,3 +44,4 @@ class App extends Component {
 }
 
 export default App;
+

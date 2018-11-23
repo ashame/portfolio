@@ -7,7 +7,7 @@ class MissingPage extends Component {
     render() {
         return (
             <Container>
-                <span class="title">
+                <span className="title">
                     error 404 - page not found
                 </span>
                 <p>

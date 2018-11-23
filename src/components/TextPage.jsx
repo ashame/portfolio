@@ -7,8 +7,8 @@ class TextPage extends Component {
         return (
             <Container>
                 {articles.map((article, i) => 
-                    <Container>
-                        <span class="title">
+                    <Container key={i}>
+                        <span className="title">
                             {article.title}
                         </span>
                         <p>
