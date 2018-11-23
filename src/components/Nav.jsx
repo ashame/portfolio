@@ -11,7 +11,7 @@ class Nav extends Component {
                 <ul id="navList">
                     {items.map((item, i) =>
                         <li className="navItem" key={i}>
-                            <Link to={item === 'home' ? '/' : item}>
+                            <Link to={item === 'home' ? '' : item}>
                                 {item}
                             </Link>
                             {i === items.length - 1 ? '' : '  |  '}
