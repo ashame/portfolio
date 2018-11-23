@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "gh-pages": "^2.0.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
@@ -28,5 +27,8 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "https://ashame.github.io/"
+  "homepage": "https://ashame.github.io/portfolio",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }

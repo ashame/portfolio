@@ -1,5 +1,8 @@
-.App {
+#root {
   background-color: #303030;
+}
+
+.App {
   color: white;
   font-family: source-code-pro, monospace;
   display: flex;
