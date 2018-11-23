@@ -26,12 +26,12 @@ class App extends Component {
           <Nav items={navItems} />
           <div id="content-wrapper">
             <Switch>
-              <Route name="home" path="/" render={(props) => <TextPage articles={Articles.home} {...props} />} />
-              <Route name="about" path="/about" render={(props) => <TextPage articles={Articles.about} {...props} />} />
-              <Route name="education" path="/education" render={(props) => <TextPage articles={Articles.education} {...props} />} />
-              <Route name="experience" path="/experience" render={(props) => <TextPage articles={Articles.experience} {...props} />} />
-              <Route name="projects" path="/projects" render={(props) => <TextPage articles={Articles.projects} {...props} />} />
-              <Route name="contact" path="/contact" render={(props) => <TextPage articles={Articles.contact} {...props} />} />
+              <Route name="home" path="" render={(props) => <TextPage articles={Articles.home} {...props} />} />
+              <Route name="about" path="about" render={(props) => <TextPage articles={Articles.about} {...props} />} />
+              <Route name="education" path="education" render={(props) => <TextPage articles={Articles.education} {...props} />} />
+              <Route name="experience" path="experience" render={(props) => <TextPage articles={Articles.experience} {...props} />} />
+              <Route name="projects" path="projects" render={(props) => <TextPage articles={Articles.projects} {...props} />} />
+              <Route name="contact" path="contact" render={(props) => <TextPage articles={Articles.contact} {...props} />} />
               <Route component={MissingPage} />
             </Switch>
           </div>
