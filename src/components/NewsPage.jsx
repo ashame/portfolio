@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import { Container, Divider } from 'semantic-ui-react';
 
-class About extends Component { 
+class NewsPage extends Component { 
     renderArticles() {
         const { articles } = this.props;
+        const { name } = this.props;
         return (
-            <Container>
-                {articles.map((article, i) =>
-                    <Container>
-                        <span class="title">
+            <Container id={name + '-articles'}>
+                {articles.map((article, i) => 
+                    <Container key={i} id={name + '-' + article.id} >
+                        <span className="title">
                             {article.title}
                         </span>
                         <p>
@@ -20,9 +21,8 @@ class About extends Component {
             </Container>
         )
     }
-
     render() {
-        return ( 
+        return (
             <Container>
                 { this.renderArticles() }
             </Container>
@@ -30,4 +30,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default NewsPage;

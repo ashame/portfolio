@@ -7,11 +7,11 @@ class Nav extends Component {
     render() {
         const { items } = this.props;
         return (
-            <Container>
+            <Container id="nav">
                 <ul id="navList">
                     {items.map((item, i) =>
                         <li className="navItem" key={i}>
-                            <Link to={item === 'home' ? `` : '/' + item}>
+                            <Link to={'/' + item}>
                                 {item}
                             </Link>
                             {i === items.length - 1 ? '' : '  |  '}

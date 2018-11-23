@@ -5,8 +5,8 @@ import './Footer.css';
 class Footer extends Component { 
     render() {
         return (
-            <Container>
-                <p id="footer">
+            <Container id="footer">
+                <p>
                     <a href="//github.com/ashame" target="_blank" rel="noopener noreferrer">
                         &copy; 2018 nathan liu
                     </a>

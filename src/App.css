@@ -5,13 +5,21 @@
 .App {
   color: white;
   font-family: source-code-pro, monospace;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
   text-align: center;
   align-items: center;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 5fr auto;
+  grid-template-areas:
+  "header"
+  "nav"
+  "main"
+  "main"
+  "main"
+  "footer"
 }
 
 .App a {
@@ -25,26 +33,32 @@
   height: 12vmin;
 }
 
-.App-header {
-  display: flex;
+#App-header {
+  display: inline;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
   user-select: none;
+  grid-area: header;
+}
+
+#nav {
+  grid-area: nav;
 }
 
 #content-wrapper {
   flex: 1 0 auto;  
   margin-top: 5vh;
+  align-self: start;
+  grid-area: main;
+}
+
+#footer {
+  grid-area: footer;
 }
 
 .container { 
   font-family: source-code-pro, monospace;
-}
-
-.ui.divider { 
-  margin: 5%!important; 
 }
 
 .container .title {
@@ -58,6 +72,10 @@
 
 .title { 
   user-select: none;
+}
+
+.ui.divider { 
+  margin: 5%!important; 
 }
 
 @keyframes App-logo-spin {
