@@ -47,7 +47,6 @@
 }
 
 #content-wrapper {
-  flex: 1 0 auto;  
   margin-top: 5vh;
   align-self: start;
   grid-area: main;
