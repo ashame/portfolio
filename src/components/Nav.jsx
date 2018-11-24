@@ -14,7 +14,6 @@ class Nav extends Component {
                             <Link to={'/' + item}>
                                 {item}
                             </Link>
-                            {i === items.length - 1 ? '' : '  |  '}
                         </li>
                     )}
                 </ul>

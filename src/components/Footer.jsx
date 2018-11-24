@@ -6,7 +6,7 @@ class Footer extends Component {
     render() {
         return (
             <Container id="footer">
-                <p>
+                <p id="footerText">
                     <a href="//github.com/ashame" target="_blank" rel="noopener noreferrer">
                         &copy; 2018 nathan liu
                     </a>

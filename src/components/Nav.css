@@ -12,3 +12,7 @@
     font-size: 1.3em;
     margin: auto;
 }
+
+.navItem:not(:last-child):after {
+    content:' | ';
+}

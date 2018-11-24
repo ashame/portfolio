@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { Container } from 'semantic-ui-react';
 import './MissingPage.css';
 
@@ -14,9 +13,9 @@ class MissingPage extends Component {
                     no idea how you ended up here, but this isn't supposed to happen..
                 </p>
                 <p id="report">
-                    <Link to="/contact">
+                    <a href="//github.com/ashame/portfolio/issues/new">
                         report a problem!
-                    </Link>
+                    </a>
                 </p>
             </Container>
         )
